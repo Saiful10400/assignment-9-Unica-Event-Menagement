@@ -12,7 +12,7 @@ const Login = () => {
 
   const data=useContext(datacontext)
 
-const {googleLogin}=data
+const {googleLogin,emailLogin}=data
 
 
 
@@ -27,7 +27,9 @@ const {googleLogin}=data
         e.preventDefault()
         const email=e.target.email.value
         const password=e.target.password.value
-        console.log(email,password)
+       emailLogin(email,password)
+       .then(()=>console.log("done"))
+       .catch(error=>console.log(error))
 
     }
   return (

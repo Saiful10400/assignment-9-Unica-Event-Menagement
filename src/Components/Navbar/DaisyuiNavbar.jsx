@@ -1,22 +1,25 @@
-
-import {  NavLink } from "react-router-dom";
-import logo from "../../../public/images/logo.png"
-import profile from "../../../public/images/user.png"
+import { NavLink } from "react-router-dom";
+import logo from "../../../public/images/logo.png";
+import profile from "../../../public/images/user.png";
 import { useContext } from "react";
 import { datacontext } from "../DataProvider";
 
 const DaisyuiNavbar = () => {
+  const { user, Logout } = useContext(datacontext);
 
-  const{user,Logout}=useContext(datacontext)
-
-  
-
-
-    const list=<>
-    <li><NavLink to={"/"}>Home</NavLink></li>
-    <li><NavLink to={"/login"}>Login</NavLink></li>
-
+  const list = (
+    <>
+      <li>
+        <NavLink to={"/"}>Home</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/login"}>Login</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/blog"}>Blog</NavLink>
+      </li>
     </>
+  );
 
   return (
     <div className="z-10">
@@ -53,12 +56,26 @@ const DaisyuiNavbar = () => {
         </div>
 
         <div className="navbar-end ">
-          <button onClick={Logout} className="btn-primary btn mr-4">Logout</button>
-          <div className="w-14 h-14  rounded-full object-contain">
+          <div className="flex flex-col items-center">
+            <div className="flex">
+              {user ? (
+                <button onClick={Logout} className="btn-primary btn mr-4">
+                  Logout
+                </button>
+              ) : (
+                ""
+              )}
+              <div className="w-14 h-14  rounded-full object-contain">
+                <img
+                  className="w-full h-full bg-gray-200 rounded-full "
+                  src={user?.photoURL ? user.photoURL : profile}
+                  alt=""
+                />
+              </div>
+            </div>
 
-            <img className="w-full h-full bg-gray-200 rounded-full " src={ user ? user.photoURL : profile} alt="" />
+            <p className="font-bold">{user?.email}</p>
           </div>
-          
         </div>
       </div>
     </div>

@@ -1,0 +1,6 @@
+.page{
+    background: url(../../../../public/images/detailsbg.jpg);
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.726);
+    background-blend-mode: overlay;
+}
