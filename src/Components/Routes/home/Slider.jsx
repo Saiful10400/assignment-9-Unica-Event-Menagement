@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-import "swiper/css";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -13,7 +13,7 @@ import "./slider.css";
 const Slider = () => {
   return (
   
-  <div className="z-[-1]">
+  <div>
        <Swiper
       spaceBetween={30}
       centeredSlides={true}

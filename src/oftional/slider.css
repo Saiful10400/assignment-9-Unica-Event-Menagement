@@ -1,0 +1,28 @@
+.slider1{
+    background: url(../../../../public/images/slider/slider4.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.576);
+    background-blend-mode: overlay;
+}
+.slider2{
+    background: url(../../../../public/images/slider/slider2.jpg) no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.576);
+    background-blend-mode: overlay;
+}
+.slider3{
+    background: url(../../../../public/images/slider/slider3.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.576);
+    background-blend-mode: overlay;
+}
+.slider4{
+    background: url(../../../../public/images/slider/silder1.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.576);
+    background-blend-mode: overlay;
+}

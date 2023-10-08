@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { AiFillEye } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
+import { datacontext } from "../../DataProvider";
 
 const Register = () => {
 const[hide,setHide]=useState(true)
@@ -16,6 +17,9 @@ const[hide,setHide]=useState(true)
         console.log(email,password)
 
     }
+
+   const data=useContext(datacontext)
+   console.log(data)
 
 
 

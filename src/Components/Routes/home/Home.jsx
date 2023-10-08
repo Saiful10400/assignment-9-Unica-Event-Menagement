@@ -6,16 +6,20 @@ import "aos/dist/aos.css";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import Staff from "./Staff";
+
 AOS.init();
 
 const Home = () => {
   const data = useLoaderData();
 
-  console.log(data[2].image);
+
 
   return (
     <>
+     
       <Slider></Slider>
+     
+      
 
       <div className="mt-24">
         <div data-aos="fade-right" className="text-5xl vidolaka font-normal">
