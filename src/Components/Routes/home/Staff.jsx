@@ -18,7 +18,7 @@ const Staff = () => {
 
   return (
     <div className="max-w-[1400px] mx-auto my-20">
-      <h1 data-aos="flip-up" className="vidolaka text-center mb-14 text-5xl">Our Staff</h1>
+      <h1 data-aos="flip-up" className="vidolaka text-center mb-14 text-5xl">Our team</h1>
       <div  data-aos="fade-up">
         <Swiper
           slidesPerView={3}

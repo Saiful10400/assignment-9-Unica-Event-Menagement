@@ -9,7 +9,7 @@ const Card = ({data}) => {
     <div data-aos="zoom-in-up" className="w-full ">
       <div className="card card-compact w-full bg-base-100 shadow-xl">
         <figure>
-          <img
+          <img className="w-full"
             src={image}
             alt={service}
           />

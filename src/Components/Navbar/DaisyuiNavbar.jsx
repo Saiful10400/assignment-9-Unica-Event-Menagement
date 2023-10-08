@@ -1,16 +1,15 @@
 
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import logo from "../../../public/images/logo.png"
 import user from "../../../public/images/user.png"
+
 const DaisyuiNavbar = () => {
 
 
 
     const list=<>
-    <li><Link>Home</Link></li>
-    <li><Link>About</Link></li>
-    <li><Link>Login</Link></li>
-   
+    <li><NavLink to={"/"}>Home</NavLink></li>
+    <li><NavLink to={"/login"}>Login</NavLink></li>
 
     </>
 
