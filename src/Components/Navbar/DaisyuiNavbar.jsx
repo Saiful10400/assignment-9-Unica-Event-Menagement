@@ -38,31 +38,19 @@ const DaisyuiNavbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-             {
-                list
-             }
+              {list}
             </ul>
           </div>
           <img src={logo} className="w-[98px]" />
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {
-                list
-            }
-          </ul>
+          <ul className="menu menu-horizontal px-1">{list}</ul>
         </div>
 
-
-
-        <div className="navbar-end">
-
-
-          
-            <img src={user} className="w-[50px] h-[50px] bg-gray-500 rounded-full" alt="" />
-          
-
-
+        <div className="navbar-end ">
+          <div className="w-14 h-14  rounded-full object-contain">
+            <img className="w-full h-full bg-gray-200 rounded-full " src={user} alt="" />
+          </div>
         </div>
       </div>
     </div>

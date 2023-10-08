@@ -9,16 +9,17 @@ const Contact = () => {
     return (
       <>
         <div className="my-20 max-w-[1400px] mx-auto">
-          <h1
-            data-aos="fade-up"
+          <h1 data-aos="fade-down"
+            
             className="vidolaka text-5xl font-normal text-center mb-24"
           >
             Contact Us
           </h1>
           <div className="  Vidaloka">
             {/* details */}
-            <div className=" w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10">
-              <div data-aos="flip-up" className="flex gap-4">
+            <div className=" lg:p-0 pl-2 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10">
+
+              <div data-aos="fade-up" className="flex gap-4">
                 <ImLocation className="text-[#FCB41E] text-5xl"></ImLocation>
                 <div className="text-xl">
                   <p className=" font-normal">Postal Address</p>
@@ -28,7 +29,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div data-aos="flip-up" className="flex gap-4">
+              <div data-aos="fade-up"  className="flex gap-4">
                 <BsClockHistory className="text-[#FCB41E] text-5xl"></BsClockHistory>
                 <div className="text-xl">
                   <p className=" font-normal">Open Hours</p>
@@ -38,7 +39,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div data-aos="flip-up" className="flex gap-4">
+              <div data-aos="fade-up"  className="flex gap-4">
                 <FaPhoneAlt className="text-[#FCB41E] text-5xl"></FaPhoneAlt>
                 <div className="text-xl">
                   <p className=" font-normal">Phone & E-mail</p>
@@ -48,7 +49,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div data-aos="flip-up" className="flex gap-4">
+              <div data-aos="fade-up"  className="flex gap-4">
                 <MdOutlineEditNote className="text-[#FCB41E] text-5xl"></MdOutlineEditNote>
                 <div className="text-xl">
                   <p className=" font-normal">Sessions</p>

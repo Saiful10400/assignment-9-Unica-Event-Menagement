@@ -14,12 +14,12 @@ import "aos/dist/aos.css";
 AOS.init();
 const Staff = () => {
 
-
+  // data-aos="flip-up"
 
   return (
     <div className="max-w-[1400px] mx-auto my-20">
-      <h1 data-aos="flip-up" className="vidolaka text-center mb-14 text-5xl">Our team</h1>
-      <div  data-aos="fade-up">
+      <h1 data-aos="zoom-in"  className="vidolaka text-center mb-14 text-5xl">Our team</h1>
+      <div data-aos="fade-up" >
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -53,8 +53,8 @@ const Staff = () => {
             <div className="h-[50vh] flex flex-col justify-center items-center">
 
                 <img className="w-36 h-36 object-cover rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="" />
-                <p className="lg:text-3xl text-base mt-3">Marcus Rodriguez</p>
-                <p className="lg:text-xl text-sm font-extrabold text-gray-500">Logistics Manager</p>
+                <p className="lg:text-3xl text-center text-base mt-3">Marcus Rodriguez</p>
+                <p className="lg:text-xl text-center text-sm font-extrabold text-gray-500">Logistics Manager</p>
                 <div className="flex gap-3 mt-4">
                     <a href="#"><FaFacebookF></FaFacebookF></a>
                     <a href="#"><BsLinkedin></BsLinkedin></a>
@@ -67,8 +67,8 @@ const Staff = () => {
             <div className="h-[50vh] flex flex-col justify-center items-center">
 
                 <img className="w-36 h-36 object-cover rounded-full" src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="" />
-                <p className="lg:text-3xl text-base mt-3">Emily Chen</p>
-                <p className="lg:text-xl text-sm font-extrabold text-gray-500">Creative Director</p>
+                <p className="lg:text-3xl text-center text-base mt-3">Emily Chen</p>
+                <p className="lg:text-xl text-center text-sm font-extrabold text-gray-500">Creative Director</p>
                 <div className="flex gap-3 mt-4">
                     <a href="#"><FaFacebookF></FaFacebookF></a>
                     <a href="#"><BsLinkedin></BsLinkedin></a>
