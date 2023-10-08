@@ -1,5 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ImLocation } from 'react-icons/im';
 AOS.init();
 
 const Card = ({data}) => {
@@ -14,11 +15,11 @@ const Card = ({data}) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{service}</h2>
-          <p>{description}</p>
-          <p>price: {price}</p>
+          <h2 className="card-title text-xl h-20 lg:text-3xl">{service}</h2>
+          <p className="h-32 text-base">{description}</p>
+          <p className="text-xl font-bold">price: {price}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Details</button>
+            <button className="btn btn-primary w-full">Details</button>
           </div>
         </div>
       </div>

@@ -3,6 +3,9 @@ import Slider from "./Slider";
 import Card from "./Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./Footer";
+import Contact from "./Contact";
+import Staff from "./Staff";
 AOS.init();
 
 const Home = () => {
@@ -24,12 +27,20 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-[1400px] mx-auto">
           {data.map((item, idx) => (
             <Card key={idx} data={item}></Card>
           ))}
         </div>
       </div>
+
+      <Staff></Staff>
+
+      <Contact></Contact>
+
+
+
+      <Footer></Footer>
     </>
   );
 };
