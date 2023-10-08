@@ -4,6 +4,7 @@ import profile from "../../../public/images/user.png";
 import { useContext } from "react";
 import { datacontext } from "../DataProvider";
 
+
 const DaisyuiNavbar = () => {
   const { user, Logout } = useContext(datacontext);
 
@@ -17,6 +18,9 @@ const DaisyuiNavbar = () => {
       </li>
       <li>
         <NavLink to={"/blog"}>Blog</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/affiliate"}>Affiliate</NavLink>
       </li>
     </>
   );

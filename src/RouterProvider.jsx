@@ -8,6 +8,8 @@ import PagePrivate from "./Components/Routes/PrivateRoute/PagePrivate";
 import Page from "./Components/Routes/PrivateRoute/Page";
 import BlogPrivate from "./Components/Routes/home/blog/BlogPrivate";
 import Blog from "./Components/Routes/home/blog/Blog";
+import AffiliatePrivate from "./Components/Routes/home/Affiliate/AffiliatePrivate";
+import Affiliate from "./Components/Routes/home/Affiliate/Affiliate";
 
 
 
@@ -38,6 +40,10 @@ const router=createBrowserRouter([
         {
             path:"/blog",
             element:<BlogPrivate><Blog></Blog></BlogPrivate>
+        },
+        {
+            path:"/affiliate",
+            element:<AffiliatePrivate><Affiliate></Affiliate></AffiliatePrivate>
         }
        ]
     }
