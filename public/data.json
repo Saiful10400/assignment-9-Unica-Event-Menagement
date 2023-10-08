@@ -1,0 +1,83 @@
+[
+    {
+      "id": "1",
+      "service": "Elegant Weddings",
+      "description": "Create unforgettable moments with our elegant wedding planning services. From venue selection to exquisite decorations, we ensure your special day is truly magical.",
+      "details": "Our wedding packages start at $5,000. Let us handle the intricate details, including floral arrangements, catering, and entertainment, to make your wedding day stress-free and picture-perfect.",
+      "price": "$5,000 - Custom Packages",
+      "image": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+    },
+    {
+      "id": "2",
+      "service": "Joyous Birthday Parties",
+      "description": "Celebrate birthdays in style! Our team crafts joyous birthday parties filled with unique themes, delicious cakes, and entertaining activities to make every moment memorable.",
+      "details": "Birthday packages start at $800. We handle everything from themed decorations to coordinating entertainment. Your only job is to enjoy the celebration!",
+      "price": "$800 - Custom Packages",
+      "image": "https://plus.unsplash.com/premium_photo-1691752880922-f89ff74f4c16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+    },
+    {
+      "id": "3",
+      "service": "Timeless Anniversaries",
+      "description": "Commemorate your love story with our timeless anniversary event management. We curate romantic settings, coordinate surprises, and handle every detail for a celebration of enduring love.",
+      "details": "Anniversary packages start at $1,200. Immerse yourselves in a romantic atmosphere with personalized touches, from intimate dinners to surprise gifts.",
+      "price": "$1,200 - Custom Packages",
+      "image": "https://images.unsplash.com/photo-1651777232632-2c59cd2bd463?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": "4",
+      "service": "Enchanting Engagement Parties",
+      "description": "Begin your journey to forever with enchanting engagement parties. Our planners arrange stunning venues, engagement photo shoots, and personalized details to mark this special commitment.",
+      "details": "Engagement packages start at $1,000. Let us create a magical atmosphere for your engagement, complete with romantic settings and thoughtful details.",
+      "price": "$1,000 - Custom Packages",
+      "image": "https://images.unsplash.com/photo-1496285416008-dfb54bbaedff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": "5",
+      "service": "Heartfelt Retirement Parties",
+      "description": "Bid farewell to a well-deserved retirement with heartfelt parties. We organize memorable events that capture the essence of the retiree's achievements and create an atmosphere of joy and nostalgia.",
+      "details": "Retirement packages start at $900. Celebrate a successful career with a heartfelt event, personalized to reflect the retiree's passions and accomplishments.",
+      "price": "$900 - Custom Packages",
+      "image": "https://plus.unsplash.com/premium_photo-1663051036063-b8f107055938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": "6",
+      "service": "Adorable Baby Showers",
+      "description": "Welcome the newest member of the family with adorable baby showers. Our team plans charming events with cute themes, delightful decorations, and games that celebrate the joy of parenthood.",
+      "details": "Baby shower packages start at $600. Enjoy a stress-free celebration with creative themes, baby-friendly decor, and fun activities for all your guests.",
+      "price": "$600 - Custom Packages",
+      "image": "https://images.pexels.com/photos/3593437/pexels-photo-3593437.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": "7",
+      "service": "Milestone Celebrations",
+      "description": "Mark life's milestones with our expert event management. Whether it's a graduation, promotion, or other achievements, we create celebrations that reflect your success and joy.",
+      "details": "Milestone celebration packages start at $750. Let us turn your achievements into unforgettable moments with customized events that capture the essence of your success.",
+      "price": "$750 - Custom Packages",
+      "image": "https://images.unsplash.com/photo-1591243315780-978fd00ff9db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": "8",
+      "service": "Themed Parties",
+      "description": "Immerse yourself in the magic of themed parties. From masquerade balls to retro discos, we bring your chosen theme to life with creative decor, costumes, and entertainment.",
+      "details": "Themed party packages start at $700. Dive into a world of imagination with our expertly crafted themed events, where every detail is tailored to your chosen concept.",
+      "price": "$700 - Custom Packages",
+      "image": "https://plus.unsplash.com/premium_photo-1661549966538-3438f6d6cf8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+    },
+    {
+      "id": "9",
+      "service": "Surprise Events",
+      "description": "Add an element of surprise to your special occasions. Our team specializes in crafting surprise events that leave lasting impressions, filled with unexpected delights and magical moments.",
+      "details": "Surprise event packages start at $1,500. Let us create suspenseful and joyous moments with carefully planned surprises that will be remembered for a lifetime.",
+      "price": "$1,500 - Custom Packages",
+      "image": "https://plus.unsplash.com/premium_photo-1661607977839-ea47e195d789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      "id": "10",
+      "service": "Corporate Celebrations",
+      "description": "Elevate your corporate events with our professional touch. We manage corporate celebrations, conferences, and product launches, ensuring a seamless blend of business and pleasure.",
+      "details": "Corporate celebration packages start at $2,000. Impress clients and employees alike with meticulously planned corporate events that reflect your company's success and vision.",
+      "price": "$2,000 - Custom Packages",
+      "image": "https://plus.unsplash.com/premium_photo-1664474555701-50b289136473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+    }
+  ]
+  

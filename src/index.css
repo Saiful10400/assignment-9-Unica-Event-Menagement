@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Vidaloka&display=swap');
+
+
+.saiful{
+    color: red;
+}
+
+.openFont{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vidolaka{
+  font-family: 'Vidaloka', serif;
+}
