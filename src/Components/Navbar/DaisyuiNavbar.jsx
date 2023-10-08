@@ -1,10 +1,15 @@
 
 import {  NavLink } from "react-router-dom";
 import logo from "../../../public/images/logo.png"
-import user from "../../../public/images/user.png"
+import profile from "../../../public/images/user.png"
+import { useContext } from "react";
+import { datacontext } from "../DataProvider";
 
 const DaisyuiNavbar = () => {
 
+  const{user,Logout}=useContext(datacontext)
+
+  
 
 
     const list=<>
@@ -48,9 +53,12 @@ const DaisyuiNavbar = () => {
         </div>
 
         <div className="navbar-end ">
+          <button onClick={Logout} className="btn-primary btn mr-4">Logout</button>
           <div className="w-14 h-14  rounded-full object-contain">
-            <img className="w-full h-full bg-gray-200 rounded-full " src={user} alt="" />
+
+            <img className="w-full h-full bg-gray-200 rounded-full " src={ user ? user.photoURL : profile} alt="" />
           </div>
+          
         </div>
       </div>
     </div>

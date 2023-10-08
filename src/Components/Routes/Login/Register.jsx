@@ -6,6 +6,8 @@ import { AiFillEyeInvisible } from "react-icons/ai";
 import { datacontext } from "../../DataProvider";
 
 const Register = () => {
+
+  const {createuser}=useContext(datacontext)
 const[hide,setHide]=useState(true)
     // getting form data.
     const formHandel=(e)=>{
@@ -15,11 +17,13 @@ const[hide,setHide]=useState(true)
         const email=e.target.email.value
         const password=e.target.password.value
         console.log(email,password)
+        createuser(email,password)
+        .then(()=>console.log("success"))
+        .catch(error=>console.log(error))
 
     }
 
-   const data=useContext(datacontext)
-   console.log(data)
+
 
 
 

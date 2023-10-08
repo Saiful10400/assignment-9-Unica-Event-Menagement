@@ -1,12 +1,26 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { AiFillEye } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { BsGoogle } from "react-icons/bs";
+import { datacontext } from "../../DataProvider";
+
 
 
 const Login = () => {
+
+  const data=useContext(datacontext)
+
+const {googleLogin}=data
+
+
+
+
+
+
+  // cotext api data.
+ 
     const[hide,setHide]=useState(true)
 
     const formHandle=(e)=>{
@@ -84,7 +98,7 @@ const Login = () => {
           <div>
             
             <p className="text-center mb-4">or</p>
-            <button className="bg-gray-200 w-[96%]  hover:text-gray-500 mx-auto rounded-lg flex justify-center items-center text-2xl gap-4 py-3">
+            <button onClick={googleLogin} className="bg-gray-200 w-[96%]  hover:text-gray-500 mx-auto rounded-lg flex justify-center items-center text-2xl gap-4 py-3">
                 <BsGoogle></BsGoogle>
                 <span className="font-semibold">Continue with google</span>
             </button>

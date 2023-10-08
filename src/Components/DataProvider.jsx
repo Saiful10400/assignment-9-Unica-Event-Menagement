@@ -1,21 +1,58 @@
-import { createContext } from "react";
-export const datacontext=createContext(null)
+import { createContext, useEffect, useState } from "react";
+import auth from "./../Authentication/firebaseinit";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithPopup,signOut } from "firebase/auth";
 
-const DataProvider = ({children}) => {
+export const datacontext = createContext(null);
 
-  
+const googleProvider = new GoogleAuthProvider();
+const DataProvider = ({ children }) => {
+    const[user,setUser]=useState(null)
+  // all athentication related page solution.
 
-    const conveyedData={
-        name:"saiful"
-    }
-    return (
-        <div>
-            <datacontext.Provider value={conveyedData}>
-                {children}
+  useEffect(()=>{
+    const unsubscribe=onAuthStateChanged(auth,currentuser=>{
+        setUser(currentuser)
+    })
+    return unsubscribe
+  },[])
 
-            </datacontext.Provider>
-        </div>
-    );
+//   signout
+const Logout=()=>{
+    signOut(auth)
+    .then(()=>console.log("sighout"))
+    .catch(error=>console.log(error))
+}
+
+  console.log(user)
+  // 1.google provider.
+  const googleLogin = () => {
+    signInWithPopup(auth, googleProvider)
+      .then((result) => console.log(result))
+      .catch((error) => console.log(error));
+  };
+//   2. email and password.
+
+const createuser=(email,password)=>{
+   return createUserWithEmailAndPassword(auth,email,password)
+}
+
+
+
+
+// context api daat.
+  const conveyedData = {
+    googleLogin,
+    user,
+    Logout,
+    createuser
+  };
+  return (
+    <div>
+      <datacontext.Provider value={conveyedData}>
+        {children}
+      </datacontext.Provider>
+    </div>
+  );
 };
 
 export default DataProvider;
