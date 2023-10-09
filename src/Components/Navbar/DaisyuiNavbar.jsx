@@ -24,7 +24,7 @@ const DaisyuiNavbar = () => {
       </li>
     </>
   );
-
+console.log(user)
   return (
     <div className="z-10">
       <div className="navbar bg-base-100">
@@ -69,7 +69,7 @@ const DaisyuiNavbar = () => {
               ) : (
                 ""
               )}
-              <div className="w-14 h-14  rounded-full object-contain">
+              <div className="lg:w-14 w-10 h-10 lg:h-14  rounded-full object-contain">
                 <img
                   className="w-full h-full bg-gray-200 rounded-full "
                   src={user?.photoURL ? user.photoURL : profile}
