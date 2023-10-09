@@ -26,22 +26,21 @@ const Register = () => {
         .catch((error) => console.log(error));
       seterror("");
 
-      setTimeout(() => {
-        nameUpdata(name)
-      }, 1000);
+      
       
     } else if (!expression.test(password)) {
       seterror(
         "Password shold be more than 6 cherector,atleast one uppercase & special cherector."
       );
     }
+   
   };
 
   return (
     <div>
       <div className="hero min-h-[93vh] bg-gray-300 ">
         <div className="card rounded-none lg:rounded-2xl lg:h-auto h-full flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
-          <form onSubmit={formHandel} className="card-body">
+          <form  onSubmit={formHandel} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>

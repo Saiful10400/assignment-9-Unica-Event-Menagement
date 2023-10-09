@@ -78,7 +78,7 @@ console.log(user)
               </div>
             </div>
 
-            <p className="font-bold">{user?.email}</p>
+            <p className="font-bold">{user?.displayName ? user?.displayName : user?.email}</p>
           </div>
         </div>
       </div>

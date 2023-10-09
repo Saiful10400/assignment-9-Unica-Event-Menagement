@@ -25,6 +25,7 @@ const Login = () => {
     const password = e.target.password.value;
     emailLogin(email, password)
       .then(() => swal("Login successfull."))
+     
       .catch((Error) => setfail(Error.message));
     };
     console.log(fail);
