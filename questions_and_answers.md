@@ -15,7 +15,7 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>this ans is "A" because this variable is defined at first.so there no chance for option "c".after defining the (greeting) variable,next line assigned its value. </b></summary>
 <p>
 
 #### Answer: A
@@ -40,10 +40,10 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>sum function's both paramitre is not a number.one is string of that two paramitre.thats why the function dont sum that 2 paramitre,the function concatinate that 2 paramitre,and return value is ("12") which is a string.</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
 <i>Write your explanation here</i>
 
@@ -66,10 +66,10 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>info object just teke a index number valu of "food" array.it don't take food array's reference. so do any thing with info variable. in will not change a bit of food variable</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
 <i>Write your explanation here</i>
 
@@ -91,10 +91,10 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>inthis function name function is not defined when its called.so "name" paramitre valu is undefined. when the function is return it just return a string , where "name"paremitre "undefined"value is concatinated.</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
 <i>Write your explanation here</i>
 
@@ -119,10 +119,10 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>we know that (0) is a falsy value.when we run a foreach on nums variable,for first index valu (0) if block is not fired and thats why conunt valu is not incremented. but for other elements of nums variable is truthy.for them if block is fired and "count variable value is incremented 3 time with (1).thats why total count value is 3.</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
 <i>Write your explanation here</i>
 
