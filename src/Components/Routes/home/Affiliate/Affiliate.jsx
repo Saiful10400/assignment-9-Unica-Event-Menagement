@@ -16,7 +16,7 @@ const Affiliate = () => {
       <div className="hero min-h-screen bg-base-200">
        
         <div className="card flex-shrink-0 w-full max-w-6xl shadow-2xl bg-base-100">
-            <h1 className="text-center text-4xl mt-4">Register a new affiliate account</h1>
+            <h1 className="text-center text-2xl lg:text-4xl mt-4">Register a new affiliate account</h1>
           <form onSubmit={formHandle} className="card-body">
             <div className="form-control">
               <label className="label">
