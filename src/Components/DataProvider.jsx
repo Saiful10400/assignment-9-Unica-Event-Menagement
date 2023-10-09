@@ -7,11 +7,13 @@ export const datacontext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 const DataProvider = ({ children }) => {
     const[user,setUser]=useState(null)
+    const[loading,setloading]=useState(true)
   // all athentication related page solution.
 
   useEffect(()=>{
     const unsubscribe=onAuthStateChanged(auth,currentuser=>{
         setUser(currentuser)
+        setloading(false)
     })
     return unsubscribe
   },[])
@@ -51,7 +53,8 @@ const emailLogin=(email,password)=>{
     user,
     Logout,
     createuser,
-    emailLogin
+    emailLogin,
+    loading
   };
   return (
     <div>

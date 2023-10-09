@@ -6,7 +6,7 @@ import { AiFillEyeInvisible } from "react-icons/ai";
 import { datacontext } from "../../DataProvider";
 
 const Register = () => {
-
+const[error,seterror]=useState("")
   const {createuser}=useContext(datacontext)
 const[hide,setHide]=useState(true)
     // getting form data.
@@ -16,10 +16,23 @@ const[hide,setHide]=useState(true)
         const name=e.target.name.value
         const email=e.target.email.value
         const password=e.target.password.value
-        console.log(email,password)
-        createuser(email,password)
-        .then(()=>console.log("success"))
-        .catch(error=>console.log(error))
+
+        let expression=/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])(.{6,})$/
+
+        if(expression.test(password)){
+          console.log(email,password)
+          createuser(email,password)
+          .then(()=>console.log("success"))
+          .catch(error=>console.log(error))
+          seterror("")
+        }
+        else if(!expression.test(password)){
+          seterror("Password shold be more than 6 cherector,atleast one uppercase & special cherector.")
+        }
+
+
+
+       
 
     }
 
@@ -31,7 +44,7 @@ const[hide,setHide]=useState(true)
     return (
         <div>
               <div className="hero min-h-[93vh] bg-gray-300 ">
-        <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
+        <div className="card rounded-none lg:rounded-2xl lg:h-auto h-full flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
 
 
 
@@ -87,6 +100,7 @@ const[hide,setHide]=useState(true)
                 </button></span>
 
              </div>
+             <h1 className="text-red-600 font-bold my-4">{error}</h1>
               <label className="label">
                 <p>
                   Have an account? Go and<span> </span>

@@ -6,13 +6,16 @@ import { Navigate } from 'react-router-dom';
 
 const PagePrivate = ({ children }) => {
  
-    const {user} =useContext(datacontext)
+    const {user,loading} =useContext(datacontext)
+    if(loading){
+     return <div className='w-full h-screen justify-center items-center flex'><span className="loading loading-spinner loading-lg"></span></div>
+    }
 
-    if(user){
+    else if(user){
         return children
     }
     else{
-      return <h1>helow saiful</h1>
+      return <Navigate to={"/login"}></Navigate>
     }
     
     // return (

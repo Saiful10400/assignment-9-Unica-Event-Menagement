@@ -10,6 +10,7 @@ import { datacontext } from "../../DataProvider";
 
 const Login = () => {
 
+  const[eror,seterror]=useState("")
   const data=useContext(datacontext)
 
 const {googleLogin,emailLogin}=data
@@ -29,13 +30,13 @@ const {googleLogin,emailLogin}=data
         const password=e.target.password.value
        emailLogin(email,password)
        .then(()=>console.log("done"))
-       .catch(error=>console.log(error))
-
+       .catch(error=>seterror(error))
+console.log(eror)
     }
   return (
     <div>
       <div className="hero min-h-[92vh] bg-gray-300 ">
-        <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100 pb-7">
+        <div className="card rounded-none lg:rounded-2xl flex-shrink-0 w-full lg:h-auto h-full max-w-lg shadow-2xl bg-base-100 pb-7">
 
 
 
@@ -79,6 +80,7 @@ const {googleLogin,emailLogin}=data
                 </button></span>
 
              </div>
+             <p>{"error"}</p>
               <label className="label">
                 <p>
                   New user? Go and <span> </span>
@@ -97,13 +99,14 @@ const {googleLogin,emailLogin}=data
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
-          <div>
-            
-            <p className="text-center mb-4">or</p>
+          <p className="text-center mb-4">or</p>
             <button onClick={googleLogin} className="bg-gray-200 w-[96%]  hover:text-gray-500 mx-auto rounded-lg flex justify-center items-center text-2xl gap-4 py-3">
                 <BsGoogle></BsGoogle>
-                <span className="font-semibold">Continue with google</span>
+                <span className="font-normal">Continue with google</span>
             </button>
+          <div>
+            
+            
            
           </div>
 

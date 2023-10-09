@@ -12,12 +12,12 @@ const Page = () => {
     
     return (
         <div className='lg:w-[1400px] mx-auto vidolaka'>
-            <div className='flex flex-col lg:flex-row lg:gap-5 w-screen page'>
+            <div className='flex flex-col lg:flex-row lg:gap-5 page'>
                 <div className='lg:w-1/2 w-screen'>
                     <img className='w-full rounded-lg' src={tobeshown.image} alt="" />
                 </div>
 
-                <div className='lg:w-1/2 w-screen text-white'>
+                <div className='lg:w-1/2 w-screen mb-5 lg:mb-0 text-white'>
                     <h1 className='text-5xl mt-4'>{tobeshown.service}</h1>
                     <h1 className='text-3xl mt-10 mb-6 text-orange-500 font-bold'>{tobeshown.price}</h1>
                     <p className='text-xl font-sans font-bold '>{tobeshown.description} <p className='mt-5'>{tobeshown.details}</p></p>
