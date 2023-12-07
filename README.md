@@ -8,3 +8,6 @@
    3) User can apply for Affiliate partnership.
    4) User can't register with a weak password.(strong security ensured)
    5) Most of the components appear on the screen with a satisfying transition.
+
+
+   # Live link :https://event-management-5ebf6.web.app/
